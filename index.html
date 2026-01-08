@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Javier San Millán</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <meta name="description" content="Personal website of Javier San Millán" />
+</head>
+
+<body>
+  <!-- Top navigation -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">Javier San Millán</div>
+
+      <nav class="nav">
+        <a class="nav-link active" href="index.html">About me</a>
+        <a class="nav-link" href="publications.html">Publications</a>
+        <a class="nav-link" href="work-in-progress.html">Work in progress</a>
+        <a class="nav-link" href="cv.html">CV</a>
+      </nav>
+
+      <div class="topbar-right">
+        <a class="icon-btn" href="mailto:YOUR_EMAIL@domain.com" title="Email" aria-label="Email">✉︎</a>
+        <a class="icon-btn" href="https://scholar.google.com/" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar">🎓</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page layout -->
+  <main class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="card">
+        <img class="avatar" src="assets/profile.jpg" alt="Portrait photo" />
+        <h1 class="name">Javier San Millán</h1>
+        <p class="role">PhD candidate in Urban Studies</p>
+
+        <div class="meta">
+          <div class="meta-row">
+            <span class="meta-ico">📍</span>
+            <span>Delft, Netherlands</span>
+          </div>
+        </div>
+
+        <div class="links">
+          <a class="link" href="mailto:YOUR_EMAIL@domain.com">Email</a>
+          <a class="link" href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>
+          <a class="link" href="https://bsky.app/" target="_blank" rel="noopener">Bluesky</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Content -->
+    <section class="content">
+      <h2>About me</h2>
+
+      <p>
+        I am a doctoral researcher at <a href="https://www.tudelft.nl/" target="_blank" rel="noopener">TU Delft</a>
+        as part of the <a href="#" target="_blank" rel="noopener">SEGUE project</a>.
+        I study the relationship between economic inequality and residential segregation, with particular attention
+        to the role of housing policy. I am also a Law graduate and member of the Madrid Bar Association (nº 144232).
+        You can find my full CV <a href="cv.html">here</a>.
+      </p>
+
+      <p>
+        I work with large-scale administrative microdata, combining spatial analysis with quantitative methods to study
+        income and wealth segregation across different geographic scales. I have also used experimental methods (i.e.
+        correspondence testing) to study housing discrimination against racial minorities.
+      </p>
+
+      <p>
+        Alongside my academic work, I have experience in the field of human rights, including preparing and leading submissions
+        on the right to housing before the United Nations Committee on Economic, Social and Cultural Rights. I often collaborate
+        with civil-society organisations, using empirical research to inform public discussions on housing and urban inequality.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      © <span id="year"></span> Javier San Millán
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
